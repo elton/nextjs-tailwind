@@ -10,6 +10,7 @@
   "dependencies": {
     "antd": "^4.9.1",
     "autoprefixer": "^10.0.4",
+    "moment": "^2.29.1",
     "next": "10.0.3",
     "postcss": "^8.1.10",
     "react": "17.0.1",

@@ -10,9 +10,11 @@ export default function Home() {
         <title>Create Next App</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <ChitChat />
-      <NameCard />
-      <AntHello />
+      <div className='p-4 m-4 mx-auto flex'>
+        <ChitChat />
+        <NameCard />
+        <AntHello />
+      </div>
     </>
   );
 }
