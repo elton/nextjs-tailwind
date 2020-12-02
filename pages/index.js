@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import ChitChat from '../components/chitchat';
 import NameCard from '../components/namecard';
+import AntHello from '../components/anthello';
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       </Head>
       <ChitChat />
       <NameCard />
+      <AntHello />
     </>
   );
 }
