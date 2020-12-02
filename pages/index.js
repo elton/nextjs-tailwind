@@ -10,7 +10,7 @@ export default function Home() {
         <title>Create Next App</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <div className='p-4 m-4 mx-auto flex'>
+      <div className='p-1 m-4 mx-auto md:flex '>
         <ChitChat />
         <NameCard />
         <AntHello />

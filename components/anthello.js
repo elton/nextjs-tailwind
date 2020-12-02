@@ -1,10 +1,5 @@
-import { ConfigProvider, message, Button, DatePicker, version } from 'antd';
-import 'antd/dist/antd.css';
-import zhCN from 'antd/lib/locale/zh_CN';
-import moment from 'moment';
-import 'moment/locale/zh-cn';
 import React, { useState } from 'react';
-
+import { message, version, DatePicker, Alert } from 'antd';
 export default function AntHello() {
   const [date, setDate] = useState(null);
   const handleChange = (value) => {
@@ -14,14 +9,15 @@ export default function AntHello() {
     setDate(value);
   };
   return (
-    <ConfigProvider locale={zhCN}>
-      <div className='px-4 py-4 m-4 max-w-sm mx-auto'>
-        <h1>antd version: {version}</h1>
-        <DatePicker onChange={handleChange} />
-        <div className='mt-4'>
-          当前日期：{date ? date.format('YYYY年MM月DD日') : '未选择'}
-        </div>
+    <div className='m-2 max-w-sm mx-auto'>
+      <h1>antd version: {version}</h1>
+      <DatePicker onChange={handleChange} />
+      <div className='mt-2 w-full'>
+        <Alert
+          message='当前日期'
+          description={date ? date.format('YYYY年MM月DD日') : '未选择'}
+        />
       </div>
-    </ConfigProvider>
+    </div>
   );
 }

@@ -11,13 +11,17 @@
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
+import Image from 'next/image';
 
 export default function NameCard() {
   return (
     <div className='px-8 py-8 max-w-sm mx-auto bg-white rounded-xl shadow-md space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6'>
-      <img
+      <Image
         className='block mx-auto h-24 rounded-full sm:mx-0 sm:flex-shrink-0'
         src='/images/erin-lindford.jpg'
+        layout='intrinsic'
+        width={80}
+        height={80}
       />
       <div className='text-center space-y-2 sm:text-left'>
         <div className='space-y-0.5'>
