@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import ChitChat from '../components/chitchat';
+import NameCard from '../components/namecard';
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <ChitChat />
+      <NameCard />
     </>
   );
 }
